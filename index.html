@@ -1,27 +1,135 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>7949x</title>
-<style>
- 
-body{background-color:black;color:white;text-align:center;}
-.header{border:5px solid red;border-collapse:collapse;padding:2px;width:35%;text-align:center;margin:auto;text-shadow: 5px 5px 10px red;}
-.index{border:5px solid red;border-collapse:collapse;padding:2px;width:55%;text-align:center;margin:auto;text-shadow: 0 0 10px red;}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lillian's Hilarious Look</title>
+    <style>
+        body {
+            background-color: #ff6347;
+            font-family: 'Comic Sans MS', sans-serif;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            color: #32cd32;
+            font-size: 5em;
+            margin-top: 10px;
+            font-family: 'Papyrus', sans-serif;
+            transform: rotate(15deg);
+            animation: shake 0.5s infinite alternate;
+        }
+        p {
+            font-size: 2em;
+            margin: 50px;
+            color: #8a2be2;
+            font-family: 'Courier New', monospace;
+            line-height: 1.8;
+            text-transform: uppercase;
+            animation: colorChange 3s infinite;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            background-color: #ffff00;
+            padding: 30px;
+            border: 10px solid #ff4500;
+            border-radius: 20px;
+            box-shadow: 0 0 50px rgba(255, 69, 0, 0.7);
+            position: relative;
+            z-index: 1;
+            animation: zoomOut 5s infinite alternate;
+        }
+        .container p {
+            font-family: 'Impact', sans-serif;
+            color: #ff1493;
+            text-shadow: 5px 5px #000000;
+            font-size: 1.5em;
+            background-color: #00ffff;
+            padding: 10px;
+            border-radius: 10px;
+            animation: moveText 1.5s infinite alternate;
+        }
+        .funny-image {
+            max-width: 70%;
+            margin-top: 30px;
+            border-radius: 50%;
+            border: 10px solid #ff1493;
+            box-shadow: 0 0 30px rgba(255, 105, 180, 0.7);
+            animation: spin 2s infinite linear;
+        }
+        .highlight {
+            color: #ff00ff;
+            font-size: 2em;
+            font-family: 'Verdana', sans-serif;
+            animation: bounce 0.5s infinite alternate;
+        }
+        .joke {
+            font-size: 2.5em;
+            color: #32cd32;
+            font-family: 'Arial', sans-serif;
+            background-color: #8a2be2;
+            padding: 20px;
+            margin-top: 40px;
+            animation: slideIn 1s forwards;
+        }
 
-</style>
+        /* Animations */
+        @keyframes shake {
+            0% { transform: rotate(15deg); }
+            100% { transform: rotate(-15deg); }
+        }
+
+        @keyframes colorChange {
+            0% { color: #ff6347; }
+            50% { color: #32cd32; }
+            100% { color: #ff1493; }
+        }
+
+        @keyframes zoomOut {
+            0% { transform: scale(1); }
+            100% { transform: scale(0.8); }
+        }
+
+        @keyframes moveText {
+            0% { transform: translateX(10px); }
+            100% { transform: translateX(-10px); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(0); }
+        }
+
+    </style>
 </head>
 <body>
-<h1>site in development</h1>
-<div class="header">
-<h1><font size="20px">7949x</font></h1>
-</div>
-<br>
-<div class="index">
-<h2>Welcome to 7949x, a hosting page for some of my friends' and my projects, images, and videos.</h2>
+    <h1>Why Lillian Looks Hilarious</h1>
+    <div class="container">
+        <p>Meet Lillian! She's got a look that's just <span class="highlight">too funny to handle!</span> It's not the kind of funny where you're laughing with her—it's the kind where you're laughing <span class="highlight">at her</span>. In the most endearing, charming, and utterly ridiculous way possible!</p>
 
+        <p>First of all, her hair—imagine if a windstorm met a hairbrush and they decided to become lifelong friends. It's a tangled mess of glorious chaos that defies the laws of physics. No matter what she does, it's always just a <span class="highlight">little</span> bit off-center. But don't worry, Lillian loves it!</p>
 
+        <p>Her <span class="highlight">smile</span> is another story. It's a cross between a chipmunk on a sugar rush and someone who just got caught doing something they shouldn’t. It's like she’s perpetually up to something funny—and we love it.</p>
 
+        <img src="https://7949x.github.io/lillian_img.png" alt="Lillian looking funny" class="funny-image">
+        
+        <p>If you ever catch her walking down the street, you'll notice that she somehow manages to trip over nothing. It's a talent. And let's not forget the way she makes facial expressions—half of them look like she just tasted something gross and the other half like she's about to burst out into song for no reason.</p>
 
-
-
+        <p class="joke">So next time you see Lillian, just know one thing: You're about to laugh, whether you want to or not. It's an art form.</p>
+    </div>
 </body>
 </html>
