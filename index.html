@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7949x: Crowdsourcing Assignments</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7949x: Crowdsourcing Assignments</title>
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,17 +11,15 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            flex-direction: column; /* Ensures the title and container stack vertically */
-            align-items: center; /* Centers content horizontally */
-            overflow: auto; /* Allow scrolling */
-            background-color: #121212; /* Dark background */
-            color: #f0f0f0; /* Light text color */
-        }
-
-        /* Announcement Banner Style */
+            flex-direction: column;
+            align-items: center;
+            overflow: auto;
+            background-color: #121212;
+            color: #f0f0f0;}
+            
         .announcement-banner {
-            background-color: #ffffff; /* White background for the banner */
-            color: #000000; /* Black text */
+            background-color: #ffffff;
+            color: #000000;
             font-size: 18px;
             font-weight: bold;
             text-align: center;
@@ -33,36 +30,29 @@
             top: 0;
             left: 0;
             z-index: 1000;
-            border-bottom: 2px solid #000000; /* Adds a border below the banner */
-        }
+            border-bottom: 2px solid #000000;}
 
-        /* Styling for the title container */
         .title-container {
             background-color: black;
             border: 2px solid #00aaff;
             border-radius: 15px;
             padding: 20px;
             text-align: center;
-            margin-top: 80px; /* Add space below the banner */
+            margin-top: 80px;
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
-            width:75%;
-        }
+            width:75%;}
 
-        /* Styling for the title text */
         .title {
             font-size: 24px;
-            font-family: Arial, sans-serif;
-        }
+            font-family: Arial, sans-serif;}
 
         .title .highlight {
-            color: #00aaff;
-        }
+            color: #00aaff;}
 
         .title .normal {
-            color: white;
-        }
+            color: white;}
 
         .container {
             display: flex;
@@ -70,87 +60,79 @@
             width: 90%;
             max-width: 1200px;
             padding: 20px;
-            gap: 30px;
-        }
+            gap: 30px;}
 
         .forms-container {
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 30px;
-        }
+            gap: 30px;}
 
         iframe {
             width: 100%;
             height: 600px;
             border: none;
-            border-radius: 10px;
-        }
+            border-radius: 10px;}
 
         .download-container {
             flex: 0.3;
-            background-color: #2a2a2a; /* Dark background for the download section */
+            background-color: #2a2a2a;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);}
 
         h2 {
             text-align: center;
-            color: #f0f0f0; /* Light color for the header */
-        }
+            color: #f0f0f0;}
 
         .download-links {
             list-style: none;
-            padding: 0;
-        }
+            padding: 0;}
 
         .download-links li {
-            margin: 10px 0;
-        }
+            margin: 10px 0;}
 
         .download-links a {
             text-decoration: none;
-            color: #00aaff; /* Light blue color for links */
-            font-weight: bold;
-        }
+            color: #00aaff;
+            font-weight: bold;}
 
         .download-links a:hover {
             text-decoration: underline;
-            color: #77c8ff; /* Lighter blue for hover effect */
-        }
-    </style>
+            color: #77c8ff;}
+</style>
 </head>
 <body>
+
     <!-- Announcement Banner Section -->
     <div class="announcement-banner">
         🚨 7949x is currently in it's beta phase so some features may be unavailable. In the meantime, spread the site around and upload assignments to give us time to organize and upload them. 🚨
     </div>
 
     <!-- Title Section -->
-    <div class="title-container">
-        <h1 class="title">
-            <span class="highlight">7949x</span><span class="normal">: Crowdsourcing Assignments</span>
-        </h1>
-        <h3>7949x is a website for sharing assignments for programming class. Simply fill out the form below with the required information and your assignment will be uploaded to the site shortly after, available for all to download. Created by students, for students.</h3>
-    </div>
+<div class="title-container">
+<h1 class="title"><span class="highlight">7949x</span><span class="normal">: Crowdsourcing Assignments</span></h1>
+<h3>7949x is a website for sharing assignments for programming class. Simply fill out the form below with the required information and your assignment will be uploaded to the site shortly after, available for all to download. Created by students, for students.</h3>
+<br>
+<h3>All assignments will be uploaded in a ".txt" format which can then be copied and pasted into your code editor of choice, likely either visual studio or notepad. You can use "Command + F" on Mac or "Ctrl + F" on Windows to search within this webpage for assignments listed in the downloads.</h3>
+</div>
+<div class="container">
 
-    <div class="container">
-        <!-- Forms Section -->
-        <div class="forms-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUqqLhSbhkXG4RWacl0NOz8kLecspNy9weu-kQQPbph5_Beg/viewform?usp=header"></iframe>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckBQr3yOo1gg4xaJTVK__KA3WVKNQ-I1azu7Ko9pG9vhmQ-w/viewform?usp=sharing"></iframe>
-        </div>
+        <!-- Google Forms Section -->
+<div class="forms-container">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUqqLhSbhkXG4RWacl0NOz8kLecspNy9weu-kQQPbph5_Beg/viewform?usp=header"></iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckBQr3yOo1gg4xaJTVK__KA3WVKNQ-I1azu7Ko9pG9vhmQ-w/viewform?usp=sharing"></iframe>
+</div>
 
-        <!-- Download Section -->
-        <div class="download-container">
-            <h2>Download Files</h2>
-            <ul class="download-links">
-                <li><a href="https://drive.google.com/uc?export=download&id=1OFUK2gVYfLbKg2wRntNEKkzQ0JhQ0f16" target="_blank">Program_3a</a></li>
-                <li><a href="https://drive.google.com/file/d/FILE_ID_2/view" target="_blank">PLACEHOLDER</a></li>
-                <li><a href="https://drive.google.com/file/d/FILE_ID_3/view" target="_blank">PLACEHOLDER</a></li>
-            </ul>
-        </div>
-    </div>
+        <!-- Assignments Download Section -->
+<div class="download-container">
+<h2>Download Assignments (.txt)</h2>
+<ul class="download-links">
+<li><a href="https://drive.google.com/uc?export=download&id=1OFUK2gVYfLbKg2wRntNEKkzQ0JhQ0f16" target="_blank">Program_3a</a></li>
+<li><a href="https://drive.google.com/file/d/FILE_ID_2/view" target="_blank">PLACEHOLDER</a></li>
+<li><a href="https://drive.google.com/file/d/FILE_ID_3/view" target="_blank">PLACEHOLDER</a></li>
+</ul>
+</div>
+</div>
 </body>
 </html>
