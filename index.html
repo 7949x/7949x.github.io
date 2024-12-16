@@ -19,6 +19,23 @@
             color: #f0f0f0; /* Light text color */
         }
 
+        /* Announcement Banner Style */
+        .announcement-banner {
+            background-color: #ffffff; /* White background for the banner */
+            color: #000000; /* Black text */
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #000000; /* Adds a border below the banner */
+        }
+
         /* Styling for the title container */
         .title-container {
             background-color: black;
@@ -26,7 +43,7 @@
             border-radius: 15px;
             padding: 20px;
             text-align: center;
-            margin-top: 20px;
+            margin-top: 80px; /* Add space below the banner */
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
@@ -105,6 +122,11 @@
     </style>
 </head>
 <body>
+    <!-- Announcement Banner Section -->
+    <div class="announcement-banner">
+        🚨 7949x is currently in it's beta phase so some features may be unavailable. In the meantime, spread the site around and upload assignments to give us time to organize and upload them. 🚨
+    </div>
+
     <!-- Title Section -->
     <div class="title-container">
         <h1 class="title">
