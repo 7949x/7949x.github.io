@@ -12,9 +12,38 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            height: 100vh;
+            flex-direction: column; /* Ensures the title and container stack vertically */
+            align-items: center; /* Centers content horizontally */
+            overflow: auto; /* Allow scrolling */
             background-color: #121212; /* Dark background */
             color: #f0f0f0; /* Light text color */
+        }
+
+        /* Styling for the title container */
+        .title-container {
+            background-color: black;
+            border: 2px solid lightblue;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Styling for the title text */
+        .title {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+        }
+
+        .title .highlight {
+            color: lightblue;
+        }
+
+        .title .normal {
+            color: white;
         }
 
         .container {
@@ -75,11 +104,19 @@
     </style>
 </head>
 <body>
+    <!-- Title Section -->
+    <div class="title-container">
+        <h1 class="title">
+            <span class="highlight">7949x</span><span class="normal">: Crowdsourcing Assignments</span>
+        </h1>
+        <h3>7949x is a website for sharing assignments for programming class.</h3>
+    </div>
+
     <div class="container">
         <!-- Forms Section -->
         <div class="forms-container">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUqqLhSbhkXG4RWacl0NOz8kLecspNy9weu-kQQPbph5_Beg/viewform?usp=header"></iframe>
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckBQr3yOo1gg4xaJTVK__KA3WVKNQ-I1azu7Ko9pG9vhmQ-w/viewform?usp=sharing"></iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckBQr3yOo1gg4xaJTVK__KA3WVKNQ-I1azu7Ko9pG9vhmQ-w/viewform?usp=sharing"></iframe>
         </div>
 
         <!-- Download Section -->
